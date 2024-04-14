@@ -1,0 +1,43 @@
+---
+import { getCollection, getEntry } from "astro:content";
+import MainLayout from "../layouts/MainLayout.astro";
+import Image from "../components/Image.astro";
+import ArticleList from "../components/ArticleList.astro";
+import Card from '../components/Card.astro';
+
+const posts = await getCollection("posts");
+const cards = [
+	await getEntry('work', 'university-of-st-andrews'),
+	await getEntry('work', 'cs50'),
+	await getEntry('work', 'wavlength')
+];
+---
+
+<MainLayout title="">
+	<div class="home__about">
+		<div class="home__profile">
+			<h1>Hi, I'm Tommy Oldfield!</h1>
+			<p>
+				I'm a full-stack web developer from Dundee, Scotland.<br>
+				I currently work for the University of St Andrews.<br>
+				You can read more about me and my work, but stick around for blog posts about tutorials and tech.
+			</p>
+		</div>
+		<Image className="home__headshot" filename="tommy-headshot" altText="Tommy Oldfield" />
+	</div>
+
+	<h2>Latest posts</h2>
+	{
+		/* This shows the correct blog posts (date descending) when built, but not in dev.....
+		The reverse version is correct in dev but not when built. Swap when necessary
+		posts.reverse().slice(0, 3).map(post => <ArticleList post={post} />) */
+		posts.slice(0, 3).map(post => <ArticleList post={post} />)
+	}
+
+	<h2 id="work">Work</h2>
+	<div class="work__grid">
+		{
+			cards.map(element => <Card content={element} collection="work" showDescription={false} heading="h3"/>)
+		}
+	</div>
+</MainLayout>

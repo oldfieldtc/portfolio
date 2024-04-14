@@ -1,0 +1,13 @@
+---
+import { getCollection } from "astro:content";
+import MainLayout from "../../layouts/MainLayout.astro";
+import Card from "../../components/Card.astro";
+
+const workEntries = await getCollection('work');
+---
+<MainLayout title="Work - ">
+    <h1>Work</h1>
+    <div class="work__grid">
+        { workEntries.map(workEntry => <Card content={workEntry} collection="work" showDescription={true} heading="h2"/>) }
+    </div>
+</MainLayout>

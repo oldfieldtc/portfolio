@@ -1,0 +1,17 @@
+---
+import '../styles/pagination.css';
+// Only basic next/previous buttons atm, but the groundwork is there for adding more to it
+const { class: className, prevUrl, nextUrl, currentUrl, currentPageNumber, lastPageNumber } = Astro.props;
+---
+<nav class=`pagination ${className}` aria-label="Blog pagination">
+    {
+        prevUrl && (
+            <a href={prevUrl}>Previous</a>
+        )
+    }
+    {
+        nextUrl && (
+            <a href={nextUrl}>Next</a>
+        )
+    }
+</nav>

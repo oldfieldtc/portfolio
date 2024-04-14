@@ -1,0 +1,52 @@
+.card__tile {
+    display: block;
+    margin-bottom: 10px;
+    box-shadow: var(--shadow);
+}
+
+.card__link {
+    position: relative;
+    text-align: center;
+
+    & img {
+        width: 100%;
+        height: auto;
+    }
+
+    & h2, & h3 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: var(--navy);
+        opacity: 0.95;
+        margin: 0;
+        color: white;
+        padding: 10px;
+        font-size: 1.1em;
+    }
+
+    &:hover h2, &:hover h3 {
+        background: var(--navy);
+        opacity: 1;
+    }
+
+    &:focus-within {
+        outline: 5px solid var(--navy);
+
+        & h2, & h3 {
+            background: var(--navy);
+            opacity: 1;
+        }
+    }
+}
+
+.card__description {
+    padding: 10px 10px 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .card__tile {
+        margin: 0;
+    }
+}
