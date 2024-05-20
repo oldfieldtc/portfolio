@@ -14,7 +14,9 @@ categories: ['External', 'Extended reality']
 tags: ["Augmented reality", "Virtual reality", "Mixed reality", "WebXR"]
 ---
 
-This post was originally posted on the [Digital Communications blog](https://digitalcommunications.wp.st-andrews.ac.uk/).
+This post was originally posted on the [Digital Communications blog](https://digitalcommunications.wp.st-andrews.ac.uk/2023/11/30/extended-reality-xr-on-the-web/).
+
+---
 
 Extended reality (XR) is gaining more attention thanks to new headsets from Apple and Meta alongside AR apps like Snapchat and Pokémon Go on smartphones, but how can universities take advantage of this technology?
 

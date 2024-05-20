@@ -14,6 +14,7 @@ export async function GET(context) {
             title: post.data.title,
             pubDate: post.data.pubDate,
             link: `/blog/${post.slug}/`,
+            ...(post.data.external.isExternal && {link: post.data.external.url}),
             ...(post.data.external.isExternal && {source: {
                     title: post.data.title,
                     url: post.data.external.url

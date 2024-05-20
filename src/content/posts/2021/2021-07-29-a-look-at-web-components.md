@@ -14,6 +14,10 @@ categories: ['External', 'Development']
 tags: ["HTML", "JavaScript"]
 ---
 
+This post was originally posted on the [Digital Communications blog](https://digitalcommunications.wp.st-andrews.ac.uk/).
+
+---
+
 Although web components have been around for several years in the web development world, it hasn’t been something that I’ve heard mentioned a lot. On the surface, web components look like an easy way to create and reuse elements and patterns for websites. But how easy are they to set up and use?
 
 ## What are web components?
@@ -56,7 +60,6 @@ Within the HTML file, the sta-navbox element can now be used with its attributes
 To see the web component in action, you can [view the code on JSFiddle](https://jsfiddle.net/beysfr0v/).
 
 ## Conclusion
-
 
 From the short time that I’ve looked into web components, the main advantages that I see are:
 

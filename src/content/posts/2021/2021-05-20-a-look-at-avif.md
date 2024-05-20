@@ -23,14 +23,11 @@ AVIF is a modern, but relatively unknown, image format and its presence is attra
 ## What is AVIF?
 AVIF (.avif) is a new, modern image format that is based on a video format called AV1, which has been developed by the Alliance for Open Media (AOMedia). The Alliance for Open Media has many big names in their governing members including Google, Apple, Microsoft, and Netflix.
 
-
 AVIF has been praised for its image compression and quality, meaning your images will look better and have a smaller file size than JPEG, PNG, and even WebP! The format is royalty-free, which hopefully means that the format will get fast, widespread web adoption as there is no license fees or royalties for companies or individuals to pay to use it.
-
 
 AVIF is already being used and implemented by some of the governing members of the Alliance for Open Media &#8211; Netflix is currently using it for their title cards; Google Chrome currently supports it as well as parts of Android, and Microsoft have developed apps for viewing and editing AVIF files.
 
-<h2>Browser support</h2>
-
+## Browser support
 
 At the time of writing, with AVIF being a relatively new format (2018), many browsers haven’t fully supported the format yet with Chrome and Opera leading the charge. Firefox is in the process of supporting AVIF for everyone and with Apple being a governing member of AOMedia, I would think that support within the Apple ecosystem would come quite soon.
 
