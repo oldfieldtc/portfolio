@@ -14,7 +14,9 @@ categories: ['External', 'Technology', 'Artificial intelligence']
 tags: ["GitHub"]
 ---
 
-> This blog post was originally published on the [Digital Communications team blog](https://digitalcommunications.wp.st-andrews.ac.uk/2021/09/14/a-look-at-github-copilot/). 
+This blog post was originally published on the [Digital Communications team blog](https://digitalcommunications.wp.st-andrews.ac.uk/2021/09/14/a-look-at-github-copilot/). 
+
+---
 
 At the end of July, GitHub released a new AI tool called Copilot that helps developers write code. I investigate what Copilot is, how it works, and give developers the peace of mind that their jobs aren’t at risk.
 
