@@ -6,7 +6,7 @@ import mdx from "@astrojs/mdx";
 // https://astro.build/config
 export default defineConfig({
   site: "https://tommyoldfield.co.uk",
-  output: "static",
+  output: "hybrid",
   adapter: cloudflare(),
   integrations: [mdx()],
   redirects: {
