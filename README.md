@@ -31,3 +31,11 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## Uploading images
+
+Using sharp, you can convert images to different file types (jpeg, webp, and avif) and upload them to AWS S3.
+
+- Fill out the fields in `.env.example` and rename this file to `.env`.
+- Create an `images` directory under `/tools` and put any images in there.
+- Run `npm run img` and the images will get converted, uploaded to your S3 bucket, and appear in the `/tools/images` directory.

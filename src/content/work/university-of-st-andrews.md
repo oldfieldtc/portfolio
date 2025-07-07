@@ -8,13 +8,16 @@ slug: university-of-st-andrews
 tags: ["WordPress", "PHP", "TerminalFour", "JavaScript"]
 ---
 
-I'm incredibly lucky to work at the University of St Andrews as part of the [Digital Communications team](https://digitalcommunications.wp.st-andrews.ac.uk/) as a web developer since the beginning of 2020. I work on updating the website using TerminalFour, answer support calls, create and update collections in Funnelback, and work on the WordPress multisite, which includes developing and updating the University WordPress theme, and developing plugins.
+
+## Digital Communications
+
+From January 2020 to November 2024, I was part of the [Digital Communications team](https://digitalcommunications.wp.st-andrews.ac.uk/) as a web developer. I worked on updating the website using TerminalFour, answered support calls, created and updated collections in Funnelback, and worked on the WordPress multisite, which included developing and updating the University WordPress theme, and developing plugins.
 
 ## WordPress
-The majority of my work at the University involves developing for and being responsible for over 800 sites on the University's WordPress multisite. Through this, I have helped develop accessible themes and plugins to ensure cookie data is consistent across the University website, and to help the team with the maintenance and auditing of the multisite.
+The majority of my work involved developing for and being responsible for over 800 sites on a handful of the University's WordPress multisites. Through this, I had helped develop accessible themes and plugins to ensure cookie data is consistent across the University website, and to help the team with the maintenance and auditing of the multisite.
 
 ### University of St Andrews theme
-The University of St Andrews WordPress theme was built to create a visual consistency between the main University website and subsites on our multisite. The theme uses our [digital pattern library](https://www.st-andrews.ac.uk/dpl/) and is fully responsive and compliant with the current WCAG 2.1 AA accessibility guidelines.
+The University of St Andrews WordPress theme was built to create a visual consistency between the main University website and subsites on our multisite. The theme uses the [digital pattern library](https://www.st-andrews.ac.uk/dpl/) and is fully responsive and compliant with the current WCAG 2.1 AA accessibility guidelines.
 
 Bespoke child themes have also been developed for the [news](https://news.st-andrews.ac.uk/), [events](https://events.st-andrews.ac.uk/), and the [IT Services](https://itservices.wp.st-andrews.ac.uk/) site.
 
@@ -33,11 +36,11 @@ Keeping up to date with over 800 sites is a tough task. Before joining the team,
 - private and password protected pages
 - plugins installed on the multisite and what sites are using theme
 
-The plugin has saved us weeks of work in not having to manually update our records and allows us to maintain the multisite easier, and quicky provide data when requested.
+The plugin has saved the team weeks of work in not having to manually update their records and allows them to maintain the multisite easier, and quickly provide data when requested.
 
 #### Cookie consent
-With the [Privacy and Electronic Communications Regulations (PECR)](https://ico.org.uk/for-organisations/guide-to-pecr/) in effect, we needed an effective way to set cookies and an easy way for users to consent (or not). The service we use on the main University website had a WordPress plugin but there was one major issue - the cookies and other settings had to be manually set on each subsite. With over 800 sites, this was unfeasible, especially if something needed to be changed in the future.
+With the [Privacy and Electronic Communications Regulations (PECR)](https://ico.org.uk/for-organisations/guide-to-pecr/) in effect, the team needed an effective way to set cookies and an easy way for users to consent (or not). The service that's used on the main University website had a WordPress plugin but there was one major issue - the cookies and other settings had to be manually set on each subsite. With over 800 sites, this was unfeasible, especially if something needed to be changed in the future.
 
-I developed a plugin that stored our cookie settings and updated the settings in the cookie consent plugin for every subsite. When it came to updating a cookie or a setting, any changes made would copy over to the other subsites. The plugin also blocked 3rd party content in iframes if full consent was not given.
+I developed a plugin that stored cookie settings and updated the settings in the cookie consent plugin for every subsite. When it came to updating a cookie or a setting, any changes made would copy over to the other subsites. The plugin also blocked 3rd party content in iframes if full consent was not given.
 
 The plugin has since evolved into a fully fledged cookie consent plugin that saves cookie preferences across the various University subdomains and acts as a standalone cookie consent solution for external domains.
