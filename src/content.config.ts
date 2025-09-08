@@ -7,6 +7,7 @@ const postsCollection = defineCollection({
     // type: 'content',
     schema: z.object({
         title: z.string(),
+        slug: z.string(),
         pubDate: z.date(),
         description: z.string(),
         author: z.string(),
@@ -28,6 +29,7 @@ const workCollection = defineCollection({
     loader: glob({ pattern: '[^_]*.{md,mdx}', base: "./src/content/work" }),
    schema: z.object({
        title: z.string(),
+       slug: z.string(),
        description: z.string(),
        image: z.object({
            filename: z.string(),
