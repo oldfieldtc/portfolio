@@ -15,7 +15,6 @@ const { page } = Astro.props;
 ---
 <MainLayout title="Blog - ">
     <h1>All posts</h1>
-    <p>blah</p>
     { page.data.map(post => <ArticleList post={post} />) }
     <Pagination
         prevUrl={page.url.prev}
