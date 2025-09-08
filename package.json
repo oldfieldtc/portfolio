@@ -5,10 +5,10 @@
   "main": "index.js",
   "dependencies": {
     "@astrojs/check": "^0.9.4",
-    "@astrojs/cloudflare": "^9.2.1",
-    "@astrojs/mdx": "^2.1.0",
-    "@astrojs/rss": "^4.0.11",
-    "astro": "^4.16.18",
+    "@astrojs/cloudflare": "^12.6.8",
+    "@astrojs/mdx": "^4.3.5",
+    "@astrojs/rss": "^4.0.12",
+    "astro": "^5.13.6",
     "typescript": "^5.8.3"
   },
   "devDependencies": {
@@ -25,8 +25,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "img": "node tools/sharp.js",
-    "build-no-ts": "astro build",
-    "dep-update": "npx npm-check-updates -u"
+    "build-no-ts": "astro build"
   },
   "author": "Tommy Oldfield",
   "license": "ISC"
