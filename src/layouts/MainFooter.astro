@@ -1,4 +1,5 @@
 ---
+const copyrightYear = new Date().getFullYear().toString();
 ---
 <footer>
     <div class="footer__wrapper">
@@ -13,11 +14,7 @@
 
 
         <p class="footer__copyright">
-            Copyright &copy; Tommy Oldfield 2019-<span id="copyrightYear"></span>
+            Copyright &copy; Tommy Oldfield 2019-{ copyrightYear }
         </p>
     </div>
 </footer>
-
-<script>
-    document.querySelector('#copyrightYear').textContent = new Date().getFullYear().toString();
-</script>
