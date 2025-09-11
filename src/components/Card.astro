@@ -13,8 +13,7 @@ interface Props {
 }
 
 const { content, heading, showDescription } = Astro.props;
-const { slug } = content;
-const { image, title, description } = content.data;
+const { image, title, description, slug } = content.data;
 const url = content.url ? content.url : `/${collection}/${slug}`;
 const TitleHeading = heading;
 ---

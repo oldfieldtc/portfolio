@@ -6,6 +6,7 @@ import ArticleList from "../components/ArticleList.astro";
 import Card from '../components/Card.astro';
 
 const posts = await getCollection("posts");
+posts.sort((a,b) => a.data.pubDate - b.data.pubDate).reverse();
 const cards = [
 	await getEntry('work', 'university-of-st-andrews'),
 	await getEntry('work', 'cs50'),
@@ -28,7 +29,7 @@ const cards = [
 
 	<h2>Latest posts</h2>
 	{
-		posts.reverse().slice(0, 3).map(post => <ArticleList post={post} />)
+		posts.slice(0, 3).map(post => <ArticleList post={post} />)
 	}
 
 	<h2 id="work">Work</h2>
