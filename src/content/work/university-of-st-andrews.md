@@ -8,6 +8,14 @@ slug: university-of-st-andrews
 tags: ["WordPress", "PHP", "TerminalFour", "JavaScript"]
 ---
 
+## Marketing
+
+Since November 2024, I joined the University's newly formed marketing team as a Digital Developer. In our biggest project, 
+I lead on the overhaul of the postgraduate subject pages which included a redesign and refactoring of the template and
+[course proofing process](https://digitalcommunications.wp.st-andrews.ac.uk/2025/01/09/course-proofing-how-to-build-a-content-management-system-within-a-content-management-system/), updated
+information
+architecture, and improved content. I also developed an 'all-in-one' course template to help consolidate separate
+templates which will help standardise course content across the website.
 
 ## Digital Communications
 

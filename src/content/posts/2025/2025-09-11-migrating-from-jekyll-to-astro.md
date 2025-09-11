@@ -1,12 +1,12 @@
 ---
 title: Migrating from Jekyll to Astro
 slug: migrating-from-jekyll-to-astro
-pubDate: 2025-09-09
+pubDate: 2025-09-11
 description: Over 1.5 years ago, I migrated from Jekyll to Astro. Here's how it went and my experience since.
 author: Tommy Oldfield
 image:
-  filename: website-mbp-mockup
-  alt: Someone sitting at a desk with a laptop, tablet, and phone all with my website displayed.
+  filename: jekyll-to-astro
+  alt: The Jekyll and Astro logos with an arrow in between, pointing to the Astro logo.
 external:
   isExternal: false
 categories: ["Work"]
@@ -25,7 +25,7 @@ While I did enjoy using Jekyll and the features it provided, I’m more used to 
 
 According to my [website's commit history](https://github.com/oldfieldtc/portfolio/commits/master/?since=2023-12-01&until=2024-04-15), it took me ten days across four months to migrate everything over like-for-like. I used both the Astro docs and [Coding in Public](https://www.youtube.com/@CodinginPublic/)'s videos - which were incredibly helpful - to help me understand creating components and layouts, how content collections work, and querying them to show the data within my components.
 
-As I didn't know TypeScript at the time (and still don't!), some things I took from the docs and videos I watched are in my codebase and admittedly, I'm not exactly sure what they do! (take note vibe coders...) I turned off TypeScript support in the config to stop the terminal yelling at me during development and build time, but this is definitely something I will be picking up in the future to stop the TypeScript syntax looking so alien to me.
+As I didn't know TypeScript at the time (and still don't! 😬), some things I took from the docs and videos I watched are in my codebase and admittedly, I'm not exactly sure what they do! (take note vibe coders...) I turned off TypeScript support in the config to stop the terminal yelling at me during development and build time, but this is definitely something I will be picking up in the future to stop the TypeScript syntax looking so alien to me.
 
 All in all, the migration went very smoothly and, with the help of the community, showed me how easy it was to create a website with Astro.
 ## Post-migration
@@ -38,3 +38,7 @@ Judging by my past actions I will have started migrating to a new platform in th
 Jokes aside, I plan on working more on this site, utilising more of Astro's features, and learning React to create components with. Also, quoting myself, I still want to "add more functionality to my site through service workers and APIs to query databases".
 
 I also want to learn [Laravel](https://laravel.com/) as I'm using PHP at work, but I will have to use that for another project!
+
+---
+
+Jekyll logo by [Jekyll contributors](https://github.com/jekyll/brand), used under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
