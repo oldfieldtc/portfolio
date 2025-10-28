@@ -1,6 +1,9 @@
 /* CSS custom properties */
 :root {
 	--navy: #1C2750;
+	--navy-90: #283461;
+	--navy-70: #485584;
+	--navy-10: #dee1ed;
 	--blue_accent: #4059B5;
 	--white: rgb(252, 252, 252);
 	--off_white: rgb(237, 235, 235);
@@ -55,7 +58,7 @@ body {
 		"header"
 		"content"
 		"footer";
-	background-color: var(--white);
+	background-color: var(--navy-10);
 
 	font-family: var(--font_body), Arial, sans-serif;
 	color: black;
@@ -85,6 +88,7 @@ body {
 	& h1, & h2, & h3, & h4, & h5, & h6 {
 		font-family: var(--font_head), "Arial", serif;
 		margin: 0 0 10px 0;
+		color: var(--navy-90);
 	}
 
 	& h1 {
@@ -318,6 +322,10 @@ main {
 	display: grid;
 	grid-template-columns: 1fr max-content;
 	gap: 20px;
+
+	strong {
+		color: var(--navy-90);
+	}
 }
 
 .home__headshot {
@@ -328,10 +336,11 @@ main {
 	justify-self: end;
 
 
-	& source, & img {
+	& img {
+		border: 8px solid var(--navy);
 		height: 100%;
 		width: 100%;
-		border-radius: 50%;
+		border-radius: 50px;
 		box-shadow: var(--shadow);
 	}
 }
