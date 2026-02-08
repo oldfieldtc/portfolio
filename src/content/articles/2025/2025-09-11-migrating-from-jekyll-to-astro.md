@@ -13,7 +13,7 @@ categories: ["Work"]
 tags: ["Astro", "Portfolio"]
 ---
 
-Back in February 2023 I wrote about [building my site using Jekyll](/blog/out-with-the-old-in-with-the-new) and hosting it on Cloudflare. I said “I don’t plan on changing frameworks or hosting provider in the near future”. Well, in December 2023, I decided I would ditch Jekyll and migrate everything over to Astro instead.
+Back in February 2023 I wrote about [building my site using Jekyll](/articles/out-with-the-old-in-with-the-new) and hosting it on Cloudflare. I said “I don’t plan on changing frameworks or hosting provider in the near future”. Well, in December 2023, I decided I would ditch Jekyll and migrate everything over to Astro instead.
 
 It is now 1.5 years after completing the migration, and after just upgrading from Astro 4 to 5, I wanted to reflect on how the migration went and my experience with using Astro since.
 ## Why Astro?
@@ -29,7 +29,7 @@ As I didn't know TypeScript at the time (and still don't! 😬), some things I t
 
 All in all, the migration went very smoothly and, with the help of the community, showed me how easy it was to create a website with Astro.
 ## Post-migration
-In the 1.5 years since migrating, I'm ashamed to say that I've neglected my site and haven't done much since - I fixed an issue with the [RSS feed](/feed.xml) and created a redirects file that Cloudflare can use. In that time, I had worked on other projects, had another child, and [moved teams at work](/blog/moving-around-the-university-of-st-andrews/) so updating and maintaining this website took a backseat.
+In the 1.5 years since migrating, I'm ashamed to say that I've neglected my site and haven't done much since - I fixed an issue with the [RSS feed](/feed.xml) and created a redirects file that Cloudflare can use. In that time, I had worked on other projects, had another child, and [moved teams at work](/articles/moving-around-the-university-of-st-andrews/) so updating and maintaining this website took a backseat.
 
 That changed recently when I upgraded from Astro 4 to version 5, made very easy again by the Astro docs. Coming back to work on this has been a good change of pace for me, and although some features have left me confused, I'm keen to dust everything off and start maintaining and learning again.
 ## The future
