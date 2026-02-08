@@ -5,15 +5,15 @@ import ArticleList from "../../components/ArticleList.astro";
 import Pagination from "../../components/Pagination.astro";
 
 export async function getStaticPaths({ paginate }) {
-    const allPosts = await getCollection('posts');
-    allPosts.sort((a,b) => a.data.pubDate - b.data.pubDate).reverse();
+    const allArticles = await getCollection('articles');
+    allArticles.sort((a,b) => a.data.pubDate - b.data.pubDate).reverse();
 
-    return paginate(allPosts, { pageSize: 10 });
+    return paginate(allArticles, { pageSize: 10 });
 }
 
 const { page } = Astro.props;
 ---
-<MainLayout title="Blog - ">
+<MainLayout title="Articles - ">
     <h1>All posts</h1>
     { page.data.map(post => <ArticleList post={post} />) }
     <Pagination
@@ -22,8 +22,8 @@ const { page } = Astro.props;
         currentUrl={page.url.current}
         currentPageNumber={page.currentPage}
         lastPageNumber={page.lastPage}
-        firstUrl="/blog"
-        lastUrl={`/blog/${page.lastPage}`}
-        class="blog-pagination"
+        firstUrl="/articles"
+        lastUrl={`/articles/${page.lastPage}`}
+        class="articles-pagination"
     />
 </MainLayout>
