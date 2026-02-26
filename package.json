@@ -8,18 +8,18 @@
     "@astrojs/cloudflare": "^12.6.12",
     "@astrojs/mdx": "^4.3.13",
     "@astrojs/rss": "^4.0.15",
-    "astro": "5.17.1",
+    "astro": "^5.18.0",
     "typescript": "^5.9.3"
   },
   "devDependencies": {
     "aws-sdk": "^2.1692.0",
     "dotenv": "^17.2.4",
-    "markdown-it": "^14.1.0",
+    "markdown-it": "14.1.1",
     "sanitize-html": "^2.17.0",
     "sharp": "^0.34.5"
   },
   "scripts": {
-    "dev": "astro dev",
+    "dev": "astro dev --host",
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",

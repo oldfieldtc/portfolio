@@ -2,13 +2,14 @@
 :root {
 	--navy: #1C2750;
 	--navy-90: #283461;
+	--navy-80: #374472;
 	--navy-70: #485584;
 	--navy-10: #dee1ed;
 	--blue_accent: #4059B5;
 	--white: rgb(252, 252, 252);
 	--off_white: rgb(237, 235, 235);
 	--mid_grey: rgb(208, 208, 208);
-	--sub-text: #6A6A6A;
+	--sub-text: #484848;
 	--center: 960px;
 	--font_head: montserrat;
 	--font_body: lato;
