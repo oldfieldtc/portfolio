@@ -2,13 +2,14 @@
 :root {
 	--navy: #1C2750;
 	--navy-90: #283461;
+	--navy-80: #374472;
 	--navy-70: #485584;
 	--navy-10: #dee1ed;
 	--blue_accent: #4059B5;
 	--white: rgb(252, 252, 252);
 	--off_white: rgb(237, 235, 235);
 	--mid_grey: rgb(208, 208, 208);
-	--sub-text: #6A6A6A;
+	--sub-text: #484848;
 	--center: 960px;
 	--font_head: montserrat;
 	--font_body: lato;
@@ -60,6 +61,7 @@ body {
 		"footer";
 	background-color: var(--navy-10);
 
+	font-size: 16px;
 	font-family: var(--font_body), Arial, sans-serif;
 	color: black;
 	line-height: 1.5;
@@ -92,7 +94,23 @@ body {
 	}
 
 	& h1 {
+		font-size: 3em;
+	}
+
+	& h2 {
+		font-size: 2.5em;
+	}
+
+	& h3 {
 		font-size: 2em;
+	}
+
+	& h4 {
+		font-size: 1.5em;
+	}
+
+	& h5 {
+		font-size: 1.25em;
 	}
 }
 
@@ -269,15 +287,15 @@ button[aria-controls="nav-list"] {
 main {
 	grid-area: content;
 
-	font-size: 1.2em;
  	text-align: left;
-	margin-bottom: 20px;
+	margin-bottom: 1.5em;
 
 	display: grid;
 	grid-template-columns: 1fr var(--center) 1fr;
 
 	& p {
-		margin-bottom: 10px;
+		margin-bottom: 0.75rem;
+		font-size: 1.2em;
 	}
 	& ul {
 		margin: 0 0 10px 20px;
@@ -437,7 +455,7 @@ footer {
 /* Small screens */
 @media screen and (max-width: 768px) {
 	body {
-		font-size: 14px;
+		/*font-size: 14px;*/
 	}
 	/* Header */
 	.header__wrapper {
@@ -503,7 +521,7 @@ footer {
 
 @media screen and (max-width: 590px) {
 	body {
-		font-size: 13px;
+		/*font-size: 13px;*/
 	}
 
 	/* Header */

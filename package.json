@@ -4,22 +4,22 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
-    "@astrojs/check": "^0.9.4",
-    "@astrojs/cloudflare": "^12.6.8",
-    "@astrojs/mdx": "^4.3.5",
-    "@astrojs/rss": "^4.0.12",
-    "astro": "^5.13.6",
-    "typescript": "^5.8.3"
+    "@astrojs/check": "^0.9.6",
+    "@astrojs/cloudflare": "^12.6.12",
+    "@astrojs/mdx": "^4.3.13",
+    "@astrojs/rss": "^4.0.15",
+    "astro": "^5.18.0",
+    "typescript": "^5.9.3"
   },
   "devDependencies": {
     "aws-sdk": "^2.1692.0",
-    "dotenv": "^16.5.0",
-    "markdown-it": "^14.1.0",
-    "sanitize-html": "^2.16.0",
-    "sharp": "^0.34.1"
+    "dotenv": "^17.2.4",
+    "markdown-it": "14.1.1",
+    "sanitize-html": "^2.17.0",
+    "sharp": "^0.34.5"
   },
   "scripts": {
-    "dev": "astro dev",
+    "dev": "astro dev --host",
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",

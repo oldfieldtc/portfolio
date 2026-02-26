@@ -5,8 +5,8 @@ import Image from "../components/Image.astro";
 import ArticleList from "../components/ArticleList.astro";
 import Card from '../components/Card.astro';
 
-const posts = await getCollection("posts");
-posts.sort((a,b) => a.data.pubDate - b.data.pubDate).reverse();
+const articles = await getCollection("articles");
+articles.sort((a, b) => a.data.pubDate - b.data.pubDate).reverse();
 const cards = [
 	await getEntry('work', 'university-of-st-andrews'),
 	await getEntry('work', 'cs50'),
@@ -20,15 +20,15 @@ const cards = [
 			<h1>Hi, I'm Tommy Oldfield!</h1>
 			<p>
 				I'm a <strong>web developer</strong> from Dundee, Scotland, currently working for the <strong>University of St Andrews</strong>.<br>
-				You can read more about me and my work, but stick around for blog posts about tutorials and tech.
+				You can read more about me and my work, but stick around for articles about tutorials and tech.
 			</p>
 		</div>
 		<Image className="home__headshot" filename="tommy-headshot" altText="Tommy Oldfield" />
 	</div>
 
-	<h2>Latest posts</h2>
+	<h2>Latest articles</h2>
 	{
-		posts.slice(0, 3).map(post => <ArticleList post={post} />)
+		articles.slice(0, 3).map(post => <ArticleList post={post} />)
 	}
 
 	<h2 id="work">Work</h2>

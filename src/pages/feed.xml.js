@@ -5,21 +5,21 @@ import MarkdownIt from 'markdown-it';
 const parser = new MarkdownIt();
 
 export async function GET(context) {
-    const blog = await getCollection('posts');
+    const articles = await getCollection('articles');
     return rss({
         title: "Tommy Oldfield",
-        description: "Blog posts from a web developer in Dundee, Scotland",
+        description: "Articles from a web developer in Dundee, Scotland",
         site: context.site,
-        items: blog.map( (post) => ({
-            title: post.data.title,
-            pubDate: post.data.pubDate,
-            link: `/blog/${post.slug}/`,
-            ...(post.data.external.isExternal && {link: post.data.external.url}),
-            ...(post.data.external.isExternal && {source: {
-                    title: post.data.title,
-                    url: post.data.external.url
+        items: articles.map( (article) => ({
+            title: article.data.title,
+            pubDate: article.data.pubDate,
+            link: `/articles/${article.data.slug}/`,
+            ...(article.data.external.isExternal && {link: article.data.external.url}),
+            ...(article.data.external.isExternal && {source: {
+                    title: article.data.title,
+                    url: article.data.external.url
                 }}),
-            content: sanitizeHtml(parser.render(post.body))
+            content: sanitizeHtml(parser.render(article.body))
         }))
     })
 }
