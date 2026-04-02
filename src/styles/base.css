@@ -300,6 +300,7 @@ main {
 	& ul {
 		margin: 0 0 10px 20px;
 		& li {
+			font-size: 1.2em;
 			& ul {
 				margin-left: 40px;
 			}
