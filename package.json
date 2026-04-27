@@ -8,6 +8,7 @@
     "@astrojs/cloudflare": "^12.6.12",
     "@astrojs/mdx": "^4.3.13",
     "@astrojs/rss": "^4.0.15",
+    "@astrojs/ts-plugin": "^1.10.7",
     "astro": "^5.18.0",
     "typescript": "^5.9.3"
   },

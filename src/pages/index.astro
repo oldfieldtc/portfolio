@@ -1,9 +1,9 @@
 ---
 import { getCollection, getEntry } from "astro:content";
-import MainLayout from "../layouts/MainLayout.astro";
-import Image from "../components/Image.astro";
-import ArticleList from "../components/ArticleList.astro";
-import Card from '../components/Card.astro';
+import MainLayout from "@layouts/MainLayout.astro";
+import Image from "@components/Image.astro";
+import ArticleList from "@components/ArticleList.astro";
+import Card from '@components/Card.astro';
 
 const articles = await getCollection("articles");
 articles.sort((a, b) => a.data.pubDate - b.data.pubDate).reverse();

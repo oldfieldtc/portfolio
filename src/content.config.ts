@@ -14,7 +14,7 @@ const articlesCollection = defineCollection({
         image: z.object({
             filename: z.string(),
             alt: z.string()
-        }),
+        }).partial(),
         external: z.object({
             isExternal: z.boolean(),
             url: z.string().url().optional()
