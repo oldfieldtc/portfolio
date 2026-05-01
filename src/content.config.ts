@@ -1,5 +1,5 @@
 // Import utilities from `astro:content`
-import {z, defineCollection, reference} from "astro:content";
+import {z, defineCollection} from "astro:content";
 import { glob } from 'astro/loaders';
 
 const articlesCollection = defineCollection({
@@ -25,7 +25,6 @@ const articlesCollection = defineCollection({
 });
 
 const workCollection = defineCollection({
-   // type: 'content',
     loader: glob({ pattern: '[^_]*.{md,mdx}', base: "./src/content/work" }),
    schema: z.object({
        title: z.string(),
