@@ -6,7 +6,7 @@ import Pagination from "../../components/Pagination.astro";
 
 export async function getStaticPaths({ paginate }) {
     const allArticles = await getCollection('articles');
-    allArticles.sort((a,b) => a.data.pubDate - b.data.pubDate).reverse();
+    allArticles.sort((a,b) => a.data.pubDate.getTime() - b.data.pubDate.getTime()).reverse();
 
     return paginate(allArticles, { pageSize: 10 });
 }

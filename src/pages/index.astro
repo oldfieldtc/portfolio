@@ -6,7 +6,7 @@ import ArticleList from "@components/ArticleList.astro";
 import Card from '@components/Card.astro';
 
 const articles = await getCollection("articles");
-articles.sort((a, b) => a.data.pubDate - b.data.pubDate).reverse();
+articles.sort((a, b) => a.data.pubDate.getTime() - b.data.pubDate.getTime()).reverse();
 const cards = [
 	await getEntry('work', 'university-of-st-andrews'),
 	await getEntry('work', 'cs50'),
