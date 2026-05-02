@@ -9,10 +9,10 @@ type Props = {
 }
 
 const { post } = Astro.props;
-const { title, description, pubDate, categories, external, slug } = post.data;
-const pathName = Astro.url.pathname;
-const postURL = external.isExternal ? external.url : `/articles/${slug}`;
-const TitleHeading = pathName === '/' ? "h3" : "h2";
+const { title, description, pubDate, external, slug } = post.data;
+const pathName: string = Astro.url.pathname;
+const postURL: string = external.isExternal ? external.url : `/articles/${slug}`;
+const TitleHeading: "h2" | "h3" = pathName === '/' ? "h3" : "h2";
 ---
 <article class="article__list">
     <div class="article__content">

@@ -1,5 +1,5 @@
 // Import utilities from `astro:content`
-import {z, defineCollection, reference} from "astro:content";
+import {z, defineCollection} from "astro:content";
 import { glob } from 'astro/loaders';
 
 const articlesCollection = defineCollection({
@@ -14,7 +14,7 @@ const articlesCollection = defineCollection({
         image: z.object({
             filename: z.string(),
             alt: z.string()
-        }),
+        }).partial(),
         external: z.object({
             isExternal: z.boolean(),
             url: z.string().url().optional()
@@ -25,7 +25,6 @@ const articlesCollection = defineCollection({
 });
 
 const workCollection = defineCollection({
-   // type: 'content',
     loader: glob({ pattern: '[^_]*.{md,mdx}', base: "./src/content/work" }),
    schema: z.object({
        title: z.string(),

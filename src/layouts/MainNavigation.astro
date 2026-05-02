@@ -37,8 +37,8 @@ import navData from "../data/navData";
 
     function toggleNav({ target }) {
         if (target.getAttribute('aria-controls') === "nav-list") {
-            const expanded = navList.getAttribute('aria-expanded') === 'true' || false;
-            navList.setAttribute('aria-expanded', !expanded);
+            let expanded: boolean = navList.getAttribute('aria-expanded') === 'true';
+            navList.setAttribute('aria-expanded', String(!expanded));
             if (!expanded) {
                 navButton.classList.add("expanded");
             } else {
