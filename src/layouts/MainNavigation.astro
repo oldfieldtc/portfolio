@@ -4,7 +4,7 @@ import Image from "../components/Image.astro";
 import navData from "../data/navData";
 ---
 <nav aria-label="Accessibility links"><a href="#content-begin">Skip to content</a></nav>
-<header>
+<header transition:persist>
     <div class="header__wrapper">
 
         <div class="logo__wrapper">
@@ -37,7 +37,7 @@ import navData from "../data/navData";
 
     function toggleNav({ target }) {
         if (target.getAttribute('aria-controls') === "nav-list") {
-            let expanded: boolean = navList.getAttribute('aria-expanded') === 'true';
+            let expanded: boolean = navList.getAttribute('aria-expanded') === 'true' || false;
             navList.setAttribute('aria-expanded', String(!expanded));
             if (!expanded) {
                 navButton.classList.add("expanded");
