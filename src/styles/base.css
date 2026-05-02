@@ -293,15 +293,15 @@ main {
 	display: grid;
 	grid-template-columns: 1fr var(--center) 1fr;
 
-	& p {
+	p {
 		margin-bottom: 0.75rem;
 		font-size: 1.2em;
 	}
-	& ul {
+	ul {
 		margin: 0 0 10px 20px;
-		& li {
-			font-size: 1.2em;
-			& ul {
+		> li {
+			font-size: 1.2rem;
+			> ul {
 				margin-left: 40px;
 			}
 		}
