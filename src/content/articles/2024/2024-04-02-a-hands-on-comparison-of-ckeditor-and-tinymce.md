@@ -4,9 +4,6 @@ title: A hands-on comparison of CKEditor and TinyMCE
 pubDate: 2024-04-02
 description: How do these two WYSIWYG editors stack up against each other and which one suits our needs the best?
 author: Tommy Oldfield
-image:
-  filename: no-image
-  alt: no-alt
 external:
     isExternal: false
 categories: ['Technology']
