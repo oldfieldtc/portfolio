@@ -16,6 +16,6 @@ jobs:
           printf '%s\n' "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
-          ssh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} "cd ${{ secrets.DEV_DIRECTORY }} && pwd"
-          cd ${{ secrets.DEV_DIRECTORY }}
+          ssh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} "cd ${{ vars.DEV_DIRECTORY }} && pwd"
+          cd ${{ vars.DEV_DIRECTORY }}
           git pull origin dev
