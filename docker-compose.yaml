@@ -1,0 +1,13 @@
+services:
+  astro-app:
+    build:
+      context: .
+      target: production
+    container_name: astro-site
+    restart: always
+    networks:
+      - pangolin
+
+networks:
+  pangolin:
+    external: true
