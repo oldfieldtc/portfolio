@@ -19,5 +19,5 @@ jobs:
           ssh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} << EOF
           cd ${{ vars.DEV_DIRECTORY }}
           git pull origin dev
-          docker compose -f docker-compose-dev.yaml up -d --build
+          docker compose -f docker-compose-dev.yaml up -d --build --force-recreate
           EOF
