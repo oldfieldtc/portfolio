@@ -6,8 +6,6 @@ services:
       target: development  # This tells Docker to stop at the 'development' stage
     ports:
       - "5301:5301"
-    volumes:
-      - .:/app # Mounts your code so changes reflect instantly
     networks:
       - pangolin
 
