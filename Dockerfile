@@ -24,8 +24,8 @@ COPY --from=build /app/package*.json ./
 RUN npm install --omit=dev
 
 ENV HOST=0.0.0.0
-ENV PORT=1234
-EXPOSE 1234
+ENV PORT=5301
+EXPOSE 5301
 CMD ["node", "./dist/server/entry.mjs"]
 
 # --- STAGE 3: Production (The "Runtime" stage) ---
