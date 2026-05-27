@@ -3,7 +3,9 @@ services:
     container_name: portfolio-dev
     build:
       context: .
-      target: development  # This tells Docker to stop at the 'development' stage
+      target: runtime  # This tells Docker to stop at the 'development' stage
+      args:
+        PORT: 5301
     ports:
       - "5301:5301"
     networks:
