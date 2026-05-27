@@ -1,14 +1,15 @@
 import { defineConfig } from 'astro/config';
-import cloudflare from "@astrojs/cloudflare";
 
 import mdx from "@astrojs/mdx";
+
+import node from '@astrojs/node';
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://tommyoldfield.co.uk",
   output: "static",
-  adapter: cloudflare(),
   integrations: [mdx()],
+
   redirects: {
     '/portfolio/pinocchio': {
       status: 301,
@@ -26,5 +27,9 @@ export default defineConfig({
       status: 301,
       destination: '/work/cs50/'
     }
-  }
+  },
+
+  adapter: node({
+    mode: 'standalone'
+  })
 });

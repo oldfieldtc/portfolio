@@ -5,8 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "@astrojs/check": "^0.9.6",
-    "@astrojs/cloudflare": "^12.6.12",
     "@astrojs/mdx": "^4.3.13",
+    "@astrojs/node": "^9.0.0",
     "@astrojs/rss": "^4.0.15",
     "@astrojs/ts-plugin": "^1.10.7",
     "astro": "^5.18.0",
